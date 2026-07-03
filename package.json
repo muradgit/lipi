@@ -1,0 +1,85 @@
+{
+  "name": "lipi-ai",
+  "version": "0.1.0",
+  "description": "Lipi — Bengali-first document-intelligence engine. Turn photos, scanned PDFs, and Office files into schema-valid, field-mapped JSON with any vision AI (Anthropic, OpenAI, Google, or your own). Product-agnostic and reusable.",
+  "keywords": [
+    "bengali",
+    "bangla",
+    "ocr",
+    "document-intelligence",
+    "llm",
+    "vision",
+    "pdf",
+    "extraction",
+    "anthropic",
+    "claude",
+    "openai",
+    "gemini",
+    "zod"
+  ],
+  "license": "MIT",
+  "author": "muradgit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muradgit/lipi.git"
+  },
+  "homepage": "https://github.com/muradgit/lipi#readme",
+  "bugs": {
+    "url": "https://github.com/muradgit/lipi/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/sdk": ">=0.60.0",
+    "@google/generative-ai": ">=0.21.0",
+    "openai": ">=4.60.0"
+  },
+  "peerDependenciesMeta": {
+    "@anthropic-ai/sdk": {
+      "optional": true
+    },
+    "@google/generative-ai": {
+      "optional": true
+    },
+    "openai": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
+    "@google/generative-ai": "^0.24.1",
+    "@types/node": "^22.0.0",
+    "openai": "^4.104.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}
