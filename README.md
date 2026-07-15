@@ -10,6 +10,14 @@ maps them to a controlled vocabulary you supply — one call does OCR **and** se
 understanding **and** field-mapping. Works with **any vision AI** (Anthropic, OpenAI,
 Google, or your own).
 
+[![npm version](https://img.shields.io/npm/v/lipi-ai.svg)](https://www.npmjs.com/package/lipi-ai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue.svg)](https://www.typescriptlang.org/)
+[![Test Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)](.github/workflows/ci.yml)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.1-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
+[📖 Full Docs](#docs) · [💬 Discussions](https://github.com/muradgit/lipi/discussions) · [🐛 Issues](https://github.com/muradgit/lipi/issues) · [🚀 Roadmap](ROADMAP.md) · [❓ FAQ](FAQ.md)
+
 </div>
 
 ---
@@ -112,13 +120,25 @@ shaped. `people` distinguishes `student` / `teacher` / `staff` via your groundin
 
 ## Docs
 
-| Read | For |
-|---|---|
-| [docs/USAGE.md](docs/USAGE.md) | Full developer & integrator guide |
-| [docs/PROVIDERS.md](docs/PROVIDERS.md) | Configure Anthropic / OpenAI / Google, or add a provider |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How Lipi is built, module map, the reuse boundary |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute, coding rules, PR checklist |
-| [CLAUDE.md](CLAUDE.md) | Orientation for AI coding assistants working in this repo |
+### Getting Started
+- **[Quick Start Guide](docs/USAGE.md)** — Installation, setup, first extraction
+- **[Examples](examples/)** — Working code samples for different scenarios
+- **[FAQ](FAQ.md)** — Common questions, troubleshooting, performance tips
+
+### For Developers
+- **[Architecture Guide](docs/ARCHITECTURE.md)** — How Lipi works, module structure, design principles
+- **[Provider Guide](docs/PROVIDERS.md)** — Configure Anthropic/OpenAI/Google, or add your own provider
+- **[Contributing Guide](CONTRIBUTING.md)** — How to contribute, coding rules, PR checklist
+- **[Roadmap](ROADMAP.md)** — Planned features and how to help prioritize
+
+### For Community
+- **[Code of Conduct](CODE_OF_CONDUCT.md)** — Community standards and expectations
+- **[Security Policy](SECURITY.md)** — Reporting vulnerabilities, best practices
+- **[Changelog](CHANGELOG.md)** — What's new in each release
+- **[GitHub Discussions](https://github.com/muradgit/lipi/discussions)** — Ask questions, share ideas
+
+### For AI Assistants
+- **[CLAUDE.md](CLAUDE.md)** — Orientation for Claude and other AI developers
 
 ## Develop
 
@@ -127,6 +147,58 @@ npm install
 npm run typecheck && npm test && npm run build
 ```
 
+### Local Development
+
+```bash
+# Watch mode for development
+npm run test:watch
+
+# Type check on save
+npm run typecheck
+
+# Build distribution files
+npm run build
+```
+
+## Community
+
+We ❤️ contributions! Here's how you can help:
+
+- **⭐ Star** — Show your support with a star
+- **🐛 Report Bugs** — [Open an issue](https://github.com/muradgit/lipi/issues)
+- **💡 Suggest Features** — [Discussions](https://github.com/muradgit/lipi/discussions)
+- **🔧 Contribute Code** — See [CONTRIBUTING.md](CONTRIBUTING.md)
+- **📝 Improve Docs** — PRs welcome!
+- **🧪 Add Examples** — Share your use cases
+- **📢 Spread the Word** — Tell your friends!
+
+## Roadmap & Priorities
+
+What's coming next? Check our **[Roadmap](ROADMAP.md)**:
+
+- Phase 1: Foundation & Community ✅
+- Phase 2: Provider Expansion (AWS, Azure, GCP, etc.)
+- Phase 3: Document Kind Expansion (invoices, contracts, forms)
+- Phase 4: Advanced Features (multi-language, tables, relations)
+- Phase 5+: Integrations, Analytics, Privacy
+
+**Have a priority?** Vote on [GitHub issues](https://github.com/muradgit/lipi/issues) or open a [discussion](https://github.com/muradgit/lipi/discussions).
+
+## Support
+
+- 💬 **Questions?** [GitHub Discussions](https://github.com/muradgit/lipi/discussions)
+- 🐛 **Bugs?** [GitHub Issues](https://github.com/muradgit/lipi/issues)
+- 🔒 **Security?** Email muradkhan31@gmail.com with [SECURITY] in subject
+- 📖 **Documentation?** See [docs/](docs/), [FAQ.md](FAQ.md), [examples/](examples/)
+
 ## License
 
-MIT © muradgit
+MIT © [muradgit](https://github.com/muradgit)
+
+See [LICENSE](LICENSE) for details.
+
+---
+
+**Made with 🪶 for the world's document intelligence needs**
+
+Help us make Lipi better for everyone. [Join the community!](https://github.com/muradgit/lipi/discussions)
